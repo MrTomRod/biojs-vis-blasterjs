@@ -1,0 +1,21 @@
+#blast-alignments-table {
+    padding-bottom: 30rem;
+}
+
+#blast-single-alignment {
+    position: fixed;
+    bottom: 0;
+    background: white;
+    padding-top: 0 !important;
+    width: 100% !important;
+}
+
+#blast-single-alignment-pre {
+    padding: 0 !important;
+    color: #0d1318;
+}
+
+#query {
+    word-wrap: anywhere;
+    font-family: mono;
+}

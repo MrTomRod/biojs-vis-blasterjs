@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Blasterjs demo: Amino acid alignments</title>
+    <link rel="icon" href="data:,">
+
+    <!-- blasterjs -->
+    <script src="../lib/html2canvas.js"></script>
+    <script src="../build/blasterjs.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/blasterjs-colors-nucleotides.css"/>
+    <link rel="stylesheet" type="text/css" href="example.css"/>
+</head>
+<body>
+
+<div id="blast-multiple-alignments"></div>
+<div id="blast-alignments-table"></div>
+<div id="blast-single-alignment"></div>
+
+</body>
+
+<script>
+    "use strict"
+
+    const blasterjs = require("biojs-vis-blasterjs")
+
+    function blast() {
+        fetch('demo_nucleotides.xml')
+            .then((response) => response.text())
+            .then((data) => {
+                let instance = new blasterjs({
+                    string: data,
+                    multipleAlignments: "blast-multiple-alignments",
+                    alignmentsTable: "blast-alignments-table",
+                    singleAlignment: "blast-single-alignment",
+                })
+            })
+
+    }
+
+    blast()
+</script>
+</html>
