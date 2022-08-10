@@ -52,7 +52,7 @@ Install the module with: `npm install biojs-vis-blasterjs`
 <div id="blast-alignments-table"></div>
 <div id="blast-single-alignment"></div>
 ...
-<script type="text/javascript" src="js/html2canvas.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
 <script type="text/javascript" src="js/blaster.js"></script>
 <script type="text/javascript">
 
